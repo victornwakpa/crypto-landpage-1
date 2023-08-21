@@ -2,12 +2,12 @@
 </script>
 
 <template>
-  <main class="bg-color min-h-full">
-    <div class="px-8 py-8 w-full text-white min-h-screen">
+  <main class="bg-color min-h-full max-w-full">
+    <div class="md:px-12 py-8 w-full text-white min-h-screen">
       <!-- NAVIGATION BAR ======================= -->
       <div class="flex justify-between items-center">
         <div>
-          <span class="uppercase">coinflip</span>
+          <span class="uppercase font-extrabold tracking-wider text-xl">coinflip</span>
         </div>
         <div>
           <ul class="flex">
@@ -18,8 +18,8 @@
             <li class="px-2">Support</li>
           </ul>
         </div>
-        <div class="grid gap-1 grid-cols-2">
-          <button class="px-5 py-3 bg-slate-400 rounded-xl">Sign in</button>
+        <div class="grid gap-2 grid-cols-2">
+          <button class="px-5 py-3 bg-slate-400 rounded-xl font-bold">Sign in</button>
           <button class="px-5 py-3 bg-slate-400 rounded-xl">Sign up</button>
         </div>
       </div>
@@ -31,8 +31,28 @@
           <span class="block mb-3">clear and simple</span>
         </h2>
         <p class="mt-3 max-w-xl text-center">Buy, sell, and grow your crypto with CoinFlip, the platform dedicated to every trader at every level.</p>
-        <button class="mt-5 py-5 px-3 bg-purple-700">Get Started</button>
+        <button class="mt-5 px-5 py-3 bg-purple-700 rounded-xl font-semibold">Get Started</button>
       </div>
+
+      <!-- CARD SECTION ==================== -->
+      <div class="h-screen-calc">
+        <div class="card-color p-8 rounded-3xl max-w-sm">
+          <img class="mx-auto" src="./assets/images/1.svg" alt="">
+          <div class="text-center flex flex-col items-center">
+            <div class="mt-5 text-2xl font-extrabold ">Trade Desk</div>
+            <p class="mt-5">Invest in crypto anytime, anywhere with our safe, secure, and easy to use online platform</p>
+            <button class=" mt-5 flex bg-slate-600 px-5 py-3 rounded-lg">
+              <span class="block">Get Started</span>
+              <div class="block">
+                <svg class="fill-white h-5 w-5">
+                  <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+
     </div>
     
   </main>

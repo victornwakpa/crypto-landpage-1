@@ -23,3 +23,6 @@ main {
 .h-screen-calc {
   height: calc(100vh - 7rem);
 }
+.card-color {
+  background-color: #1A1B23;
+}
