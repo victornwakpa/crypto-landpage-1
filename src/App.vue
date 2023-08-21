@@ -35,14 +35,14 @@
       </div>
 
       <!-- CARD SECTION ==================== -->
-      <div class="h-screen-calc">
+      <div class="h-screen-calc grid place-content-center">
         <div class="grid grid-cols-3 gap-5">
           <!-- FIRST CARD -->
           <div class="card-color p-6 rounded-3xl max-w-sm">
             <img class="mx-auto" src="./assets/images/1.svg" alt="">
             <div class="text-center flex flex-col items-center">
               <div class="mt-5 text-3xl font-extrabold ">Trade Desk</div>
-              <p class="mt-5 text-gray-400 text-sm">Invest in crypto anytime, anywhere with our safe, secure, and easy to use online platform</p>
+              <p class="mt-5 text-gray-400 text-lg">Invest in crypto anytime, anywhere with our safe, secure, and easy to use online platform</p>
               <button class=" mt-5 flex bg-slate-600 px-5 py-3 rounded-lg">
                 <span class="block">Get Started</span>
                 <div class="block">
@@ -59,7 +59,7 @@
             <img class="mx-auto" src="./assets/images/2.svg" alt="">
             <div class="text-center flex flex-col items-center">
               <div class="mt-5 text-3xl font-extrabold ">CoinFlip ATMs</div>
-              <p class="mt-5 text-gray-400 text-sm">We have thousands of ATMs located across the U.S. where you can easily convert cash to crypto</p>
+              <p class="mt-5 text-gray-400 text-lg">We have thousands of ATMs located across the U.S. where you can easily convert cash to crypto</p>
               <button class=" mt-5 flex bg-slate-600 px-5 py-3 rounded-lg">
                 <span class="block">Find an ATM</span>
                 <div class="block">
@@ -76,7 +76,7 @@
             <img class="mx-auto" src="./assets/images/3.svg" alt="">
             <div class="text-center flex flex-col items-center">
               <div class="mt-5 text-3xl font-extrabold ">CoinFlip Wallet</div>
-              <p class="mt-5 text-gray-400 text-sm">IStore your growing investments in our non-custodial wallet that gives you access to a full suite of DeFi services in one place</p>
+              <p class="mt-5 text-gray-400 text-lg">Store your growing investments in our non-custodial wallet that gives you access to a DeFi services</p>
               <button class=" mt-5 flex bg-slate-600 px-5 py-3 rounded-lg">
                 <span class="block">Download the App</span>
                 <div class="block">
