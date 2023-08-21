@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Poppins&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "inter";
+}
+
+main {
+  font-family: 'Inter', sans-serif;
+}
+
+.hero-title {
+  font-weight: 900;
+}
+
+.bg-color {
+  background-color: #0B0B0F;
+}
+
+.h-screen-calc {
+  height: calc(100vh - 7rem);
+}
