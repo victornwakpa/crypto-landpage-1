@@ -90,6 +90,21 @@
         </div>
       </div>
 
+      <!-- CLICK CATCH ============================= -->
+      <div class="h-screen-calc">
+        <div class="text-center mx-auto max-w-3xl">
+          <h3 class="font-extrabold text-5xl py-3">
+            A crypto investment platform that invests in you 
+          </h3>
+          <p class="mt-5 max-w-xl mx-auto py-3">
+            We invest more resources than any other platrom in making sure great support from real people is a click away, whenever you need it.
+          </p>
+          <button class="mt-5 bg-slate-500 py-3 px-5 rounded-xl">
+            Get Started
+          </button>
+        </div>
+      </div>
+
     </div>
     
   </main>
