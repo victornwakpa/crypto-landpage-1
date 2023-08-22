@@ -1,4 +1,5 @@
 <script setup>
+  import Card from "./components/Card.vue";
 </script>
 
 <template>
@@ -35,16 +36,16 @@
       </div>
 
       <!-- CARD SECTION ==================== -->
-      <div class="h-screen-calc grid place-content-center">
-        <div class="grid grid-cols-3 gap-5">
+      <div class="h-screen-calc grid place-content-center grid-cols-3 gap-5">
+        <div v-for="card in cards" class="grid">
           <!-- FIRST CARD -->
           <div class="card-color p-6 rounded-3xl max-w-sm">
-            <img class="mx-auto" src="./assets/images/1.svg" alt="">
+            <img class="mx-auto" :src="card.img" alt="">
             <div class="text-center flex flex-col items-center">
-              <div class="mt-5 text-3xl font-extrabold ">Trade Desk</div>
-              <p class="mt-5 text-gray-400 text-lg">Invest in crypto anytime, anywhere with our safe, secure, and easy to use online platform</p>
+              <div class="mt-5 text-3xl font-extrabold ">{{card.title}}</div>
+              <p class="mt-5 text-gray-400 text-lg">{{ card.desc }}</p>
               <button class=" mt-5 flex bg-slate-600 px-5 py-3 rounded-lg">
-                <span class="block">Get Started</span>
+                <span class="block">{{ card.button }}</span>
                 <div class="block">
                   <svg class="fill-white h-5 w-5">
                     <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
@@ -54,39 +55,7 @@
             </div>
           </div>
 
-          <!-- SECOND CARD -->
-          <div class="card-color p-6 rounded-3xl max-w-md">
-            <img class="mx-auto" src="./assets/images/2.svg" alt="">
-            <div class="text-center flex flex-col items-center">
-              <div class="mt-5 text-3xl font-extrabold ">CoinFlip ATMs</div>
-              <p class="mt-5 text-gray-400 text-lg">We have thousands of ATMs located across the U.S. where you can easily convert cash to crypto</p>
-              <button class=" mt-5 flex bg-slate-600 px-5 py-3 rounded-lg">
-                <span class="block">Find an ATM</span>
-                <div class="block">
-                  <svg class="fill-white h-5 w-5">
-                    <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
-                  </svg>
-                </div>
-              </button>
-            </div>
-          </div>
-
-          <!-- THIRD CARD -->
-          <div class="card-color p-6 rounded-3xl max-w-md">
-            <img class="mx-auto" src="./assets/images/3.svg" alt="">
-            <div class="text-center flex flex-col items-center">
-              <div class="mt-5 text-3xl font-extrabold ">CoinFlip Wallet</div>
-              <p class="mt-5 text-gray-400 text-lg">Store your growing investments in our non-custodial wallet that gives you access to a DeFi services</p>
-              <button class=" mt-5 flex bg-slate-600 px-5 py-3 rounded-lg">
-                <span class="block">Download the App</span>
-                <div class="block">
-                  <svg class="fill-white h-5 w-5">
-                    <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
-                  </svg>
-                </div>
-              </button>
-            </div>
-          </div>
+      
         </div>
       </div>
 
@@ -124,21 +93,122 @@
       </div>
 
       <!--  BUY AND SELL SECTION ================= -->
-      <div>
-        <h3>
-          Buy and sell with the lowest fees in the industry
-        </h3>
-        <p>
-          Buy and sell 150+ cryptocurrencies with 20+ fiat currencies using bank transfers or your credit/debit card.
-        </p>
-        <button class=" mt-5 flex bg-slate-600 px-5 py-3 rounded-lg">
-          <span class="block">Get Started</span>
-          <div class="block">
-            <svg class="fill-white h-5 w-5">
-              <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
-            </svg>
+      <div class="mt-24">
+        <div class="text-center px-12 py-6">
+            <h3 class="text-4xl font-extrabold max-w-lg mx-auto p-2">
+              24/7 access to full service customer support
+            </h3>
+            <p class="mt-3 p-2 mx-auto text-sm max-w-lg">
+              We invest more resources than any other platform in making sure great support from real people is a click away, whenever you need it.
+            </p>
+            <button class="m-2 rounded-md p-2 border-2 border-white">Get Started</button>
           </div>
-        </button>
+      </div>
+
+      <div>
+        <table class="">
+          <tbody class="border-custom">
+            <tr class="">
+              <th>Bitcoin</th>
+              <td class="p-3 text-sm text-gray-700">BTC</td>
+              <td class="p-3 text-sm text-gray-700">$56,290.30</td>
+              <td class="p-3 text-sm text-gray-700">+1.68%</td>
+              <td class="p-3 text-sm text-gray-700">
+                <img src="./assets/images/graph-1.svg" alt="">
+              </td>
+              <td class="p-3 text-sm text-gray-700">
+                <button class=" mt-5 flex bg-slate-600 px-5 py-3 rounded-lg">
+                <span class="block">Get Started</span>
+                <div class="block">
+                  <svg class="fill-white h-5 w-5">
+                    <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                  </svg>
+                </div>
+              </button>
+              </td>
+            </tr>
+
+            <tr>
+              <th>Ethereum</th>
+              <td class="p-3 text-sm text-gray-700">ETH</td>
+              <td class="p-3 text-sm text-gray-700">$56,290.30</td>
+              <td class="p-3 text-sm text-gray-700">+1.68%</td>
+              <td class="p-3 text-sm text-gray-700">
+                <img src="./assets/images/graph-2.svg" alt="">
+              </td>
+              <td class="p-3 text-sm text-gray-700">
+                <button class=" mt-5 flex bg-slate-600 px-5 py-3 rounded-lg">
+                <span class="block">Get Started</span>
+                <div class="block">
+                  <svg class="fill-white h-5 w-5">
+                    <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                  </svg>
+                </div>
+              </button>
+              </td>
+            </tr>
+
+            <tr>
+              <th>Cardano</th>
+              <td class="p-3 text-sm text-gray-700">ADA</td>
+              <td class="p-3 text-sm text-gray-700">$56,290.30</td>
+              <td class="p-3 text-sm text-gray-700">+1.68%</td>
+              <td class="p-3 text-sm text-gray-700">
+                <img src="./assets/images/graph-3.svg" alt="">
+              </td>
+              <td class="p-3 text-sm text-gray-700">
+                <button class=" mt-5 flex bg-slate-600 px-5 py-3 rounded-lg">
+                <span class="block">Get Started</span>
+                <div class="block">
+                  <svg class="fill-white h-5 w-5">
+                    <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                  </svg>
+                </div>
+              </button>
+              </td>
+            </tr>
+
+            <tr>
+              <th>Wax</th>
+              <td class="p-3 text-sm text-gray-700">WAXP</td>
+              <td class="p-3 text-sm text-gray-700">$56,290.30</td>
+              <td class="p-3 text-sm text-gray-700">+1.68%</td>
+              <td class="p-3 text-sm text-gray-700">
+                <img src="./assets/images/graph-4.svg" alt="">
+              </td>
+              <td class="p-3 text-sm text-gray-700">
+                <button class=" mt-5 flex bg-slate-600 px-5 py-3 rounded-lg">
+                <span class="block">Get Started</span>
+                <div class="block">
+                  <svg class="fill-white h-5 w-5">
+                    <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                  </svg>
+                </div>
+              </button>
+              </td>
+            </tr>
+
+            <tr>
+              <th>Polkadot</th>
+              <td class="p-3 text-sm text-gray-700">DOT</td>
+              <td class="p-3 text-sm text-gray-700">$56,290.30</td>
+              <td class="p-3 text-sm text-gray-700">+1.68%</td>
+              <td class="p-3 text-sm text-gray-700">
+                <img src="./assets/images/graph-5.svg" alt="">
+              </td>
+              <td>
+                <button class=" mt-5 flex bg-slate-600 px-5 py-3 rounded-lg">
+                <span class="block">Get Started</span>
+                <div class="block">
+                  <svg class="fill-white h-5 w-5">
+                    <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                  </svg>
+                </div>
+              </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
 
     </div>

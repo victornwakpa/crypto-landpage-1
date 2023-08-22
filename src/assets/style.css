@@ -16,10 +16,6 @@ main {
   font-weight: 900;
 }
 
-/* .bg-color {
-  background-color: #0B0B0F;
-  height: 100%;
-} */
 body {
   background-color: #0B0B0F;
 }
@@ -29,4 +25,9 @@ body {
 }
 .card-color {
   background-color: #1A1B23;
+}
+
+.border-custom {
+  border: 2px solid #fff;
+  border-radius: 4rem;
 }
