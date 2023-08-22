@@ -91,8 +91,9 @@
       </div>
 
       <!-- CLICK CATCH ============================= -->
-      <div class="h-screen-calc">
-        <div class="text-center mx-auto max-w-3xl">
+      <div class="h-screen-calc mb-24">
+        <!-- FIRST SECTION ========================= -->
+        <div class="text-center mx-auto max-w-3xl mb-48 mt-44 ">
           <h3 class="font-extrabold text-5xl py-3">
             A crypto investment platform that invests in you 
           </h3>
@@ -102,6 +103,22 @@
           <button class="mt-5 bg-slate-500 py-3 px-5 rounded-xl">
             Get Started
           </button>
+        </div>
+
+        <!-- SECOND SECTION ========================= -->
+        <div class="flex items-center justify-ceter">
+          <div class="flex-1 grid place-content-center">
+            <img class="w-52 text-center" src="./assets/images/icons.svg" alt="">
+          </div>
+          <div class="flex-1 text-left px-12 py-6">
+            <h3 class="text-4xl font-extrabold max-w-sm p-2">
+              24/7 access to full service customer support
+            </h3>
+            <p class="mt-3 p-2 text-sm max-w-md">
+              We invest more resources than any other platform in making sure great support from real people is a click away, whenever you need it.
+            </p>
+            <button class="m-2 rounded-md p-2 border-2 border-white">Get Started</button>
+          </div>
         </div>
       </div>
 
