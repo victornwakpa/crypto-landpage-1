@@ -1,6 +1,7 @@
 <script setup>
   import Card from "./components/Card.vue";
-  import Table from "./components/Table.vue"
+  import Table from "./components/Table.vue";
+  import Footer from "./components/Footer.vue";
 </script>
 
 <template>
@@ -114,6 +115,9 @@
           <input type="text" placeholder="Email Address">
         </form>
       </div>
+
+      <!-- FOOTER SECTION -->
+      <Footer />
 
     </div>
     
