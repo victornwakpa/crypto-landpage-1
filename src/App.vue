@@ -86,7 +86,34 @@
 
       <Table />
 
-      
+      <div class="h-screen-calc grid mt-24">
+        <div class="text-left px-12 py-6">
+          <h3 class="text-4xl font-extrabold max-w-sm p-2">
+            24/7 access to full service customer support
+          </h3>
+          <p class="mt-3 p-2 text-sm max-w-md">
+            We invest more resources than any other platform in making sure great support from real people is a click away, whenever you need it.
+          </p>
+          <button class="m-2 rounded-md p-2 border-2 border-white">Get Started</button>
+        </div>
+      </div>
+
+      <!-- NEWLETTER =================== -->
+      <div class="grid place-content-center">
+        <h4>Recieve transmission</h4>
+        <p>
+          <span>Unsubscribe at any time. </span>
+          <span>Privacy policy.</span>
+          <span class="inline-block">
+            <svg class="fill-white h-5 w-5">
+              <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+            </svg>
+          </span>
+        </p>
+        <form action="">
+          <input type="text" placeholder="Email Address">
+        </form>
+      </div>
 
     </div>
     
