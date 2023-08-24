@@ -35,3 +35,21 @@ body {
 .leading-custom {
   line-height: 3.5rem;
 }
+
+.table-color {
+  background-color: #1A1B23;
+  padding: 1em;
+  width: 90%;
+  margin: 0 auto;
+}
+
+th, td {
+  padding: 1em 3em;
+  border-bottom: 1px solid white;
+}
+tr th:first-child {
+  text-align: left;
+}
+/* tr td:nth-child(1) {
+  text-align: center;
+} */

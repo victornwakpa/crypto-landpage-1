@@ -96,7 +96,7 @@
             Take your first step into safe, secure crypto investing
           </h3>
           <p class="mt-3 p-2 text-sm">
-            Separated they live in Bookmarks right at the coast of the famous Semantics, large language ocean Separated they live in Bookmarks right at the coast.
+            Separated they live in Bookmarks right at the coast of the famous Semantics, large language ocean Separated they live in Bookmarks right at the coast.
           </p>
           <button class="m-2 rounded-md p-2 border-2 border-white">Get Started</button>
         </div>
