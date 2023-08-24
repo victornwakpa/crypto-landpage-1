@@ -59,11 +59,11 @@
           <div class="flex-1 grid place-content-center">
             <img class="w-52 text-center" src="./assets/images/icons.svg" alt="">
           </div>
-          <div class="flex-1 text-left px-12 py-6">
-            <h3 class="text-4xl font-extrabold max-w-sm p-2">
+          <div class="flex-1 text-left px-10 py-6">
+            <h3 class="text-5xl font-extrabold p-2">
               24/7 access to full service customer support
             </h3>
-            <p class="mt-3 p-2 text-sm max-w-md">
+            <p class="mt-3 p-2 text-sm">
               We invest more resources than any other platform in making sure great support from real people is a click away, whenever you need it.
             </p>
             <button class="m-2 rounded-md p-2 border-2 border-white">Get Started</button>
@@ -75,11 +75,11 @@
       <!--  BUY AND SELL SECTION ================= -->
       <div class="mt-24">
         <div class="text-center px-12 py-6">
-            <h3 class="text-4xl font-extrabold max-w-lg mx-auto p-2">
-              24/7 access to full service customer support
+            <h3 class="text-5xl font-extrabold max-w-3xl leading-custom mx-auto p-2">
+              Buy and sell with the lowest fees in the industry
             </h3>
             <p class="mt-3 p-2 mx-auto text-sm max-w-lg">
-              We invest more resources than any other platform in making sure great support from real people is a click away, whenever you need it.
+              Buy and sell 150+ cryptocurrencies with 20+ fiat currencies using bank transfers or your credit/debit card.
             </p>
             <button class="m-2 rounded-md p-2 border-2 border-white">Get Started</button>
           </div>
@@ -87,33 +87,38 @@
 
       <Table />
 
-      <div class="h-screen-calc grid mt-24">
-        <div class="text-left px-12 py-6">
-          <h3 class="text-4xl font-extrabold max-w-sm p-2">
-            24/7 access to full service customer support
+      <div class="flex items-center justify-center flex-row-reverse h-screen mt-24">
+        <div class="flex-1 grid place-content-center">
+          <img class="w-52 text-center" src="./assets/images/icons-2.svg" alt="">
+        </div>
+        <div class="flex-1 text-left px-12 py-6">
+          <h3 class="text-5xl font-extrabold max-w-lg p-2">
+            Take your first step into safe, secure crypto investing
           </h3>
-          <p class="mt-3 p-2 text-sm max-w-md">
-            We invest more resources than any other platform in making sure great support from real people is a click away, whenever you need it.
+          <p class="mt-3 p-2 text-sm">
+            Separated they live in Bookmarks right at the coast of the famous Semantics, large language ocean Separated they live in Bookmarks right at the coast.
           </p>
           <button class="m-2 rounded-md p-2 border-2 border-white">Get Started</button>
         </div>
       </div>
 
       <!-- NEWLETTER =================== -->
-      <div class="grid place-content-center">
-        <h4>Recieve transmission</h4>
-        <p>
-          <span>Unsubscribe at any time. </span>
-          <span>Privacy policy.</span>
-          <span class="inline-block">
-            <svg class="fill-white h-5 w-5">
-              <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
-            </svg>
-          </span>
-        </p>
-        <form action="">
-          <input type="text" placeholder="Email Address">
-        </form>
+      <div class="grid my-32">
+        <div class="text-sm max-w-2xl mx-auto  p-5 text-center">
+          <h3 class="text-5xl font-extrabold">Recieve transmission</h3>
+          <p class="my-3">
+            <span class="text-gray-400">Unsubscribe at any time. </span>
+            <span class="text-gray-200">Privacy policy.</span>
+            <span class="inline-block ">
+              <svg class="fill-gray-200 w-5 h-5">
+                <path d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"></path>
+              </svg>
+            </span>
+          </p>
+          <form action="">
+            <input type="text" class="p-2 rounded-lg bg-transparent border-2 my-3" placeholder="Email Address">
+          </form>
+        </div>
       </div>
 
       <!-- FOOTER SECTION -->

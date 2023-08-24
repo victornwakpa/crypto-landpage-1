@@ -31,3 +31,7 @@ body {
   border: 2px solid #fff;
   border-radius: 4rem;
 }
+
+.leading-custom {
+  line-height: 3.5rem;
+}
