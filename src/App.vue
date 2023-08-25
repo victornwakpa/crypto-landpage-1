@@ -46,7 +46,7 @@
       <!-- CLICK CATCH ============================= -->
       <div class="relative">
         <!-- FIRST SECTION ========================= -->
-        <div class="text-center mx-auto max-w-3xl mb-48 mt-44 z-10">
+        <div class="text-center mx-auto max-w-3xl mb-48 mt-44 z-1">
           <h3 class="font-extrabold text-5xl py-2 leading-custom">
             A crypto investment platform that invests in you 
           </h3>
@@ -56,12 +56,13 @@
           <button class="mt-5 button__gradient py-3 px-5 rounded-xl">
             Get Started
           </button>
-          
         </div>
 
-        <img class="absolute right-[0] top-[-150px] z-[0]" src="./assets/images/Looper-3.svg" alt="">
+        <img class="absolute right-[0] z-0 top-[-150px]" src="./assets/images/Looper-3.svg" alt="">
+
+
         <!-- SECOND SECTION ========================= -->
-        <div class="flex items-center justify-center">
+        <div class="flex items-center justify-center z[1]">
           <div class="flex-1 grid place-content-center">
             <img class="w-52 text-center" src="./assets/images/icons.svg" alt="">
           </div>
