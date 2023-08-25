@@ -6,67 +6,73 @@
 
 <template>
   <main class="bg-color min-h-full max-w-full">
-    <div class="px-20 py-8 w-full text-white min-h-screen">
-      <!-- NAVIGATION BAR ======================= -->
-      <div class="flex justify-between items-center">
-        <div>
-          <span class="uppercase font-extrabold tracking-wider text-xl">coinflip</span>
-        </div>
-        <div>
-          <ul class="flex">
-            <li class="px-2">Bull/Sell</li>
-            <li class="px-2">Grow</li>
-            <li class="px-2">Market</li>
-            <li class="px-2">Business</li>
-            <li class="px-2">Support</li>
-          </ul>
-        </div>
-        <div class="grid gap-2 grid-cols-2">
-          <button class="px-5 py-3 bg-slate-400 rounded-xl font-bold">Sign in</button>
-          <button class="px-5 py-3 bg-slate-400 rounded-xl">Sign up</button>
-        </div>
-      </div>
+    <div class="w-full text-white">
+      <div class="bg-hero px-20 py-8">
+        <div class="min-h-screen">
+          <!-- NAVIGATION BAR ======================= -->
+          <div class="flex justify-between items-center">
+            <div>
+              <span class="uppercase font-extrabold tracking-wider text-xl">coinflip</span>
+            </div>
+            <div>
+              <ul class="flex">
+                <li class="px-2">Bull/Sell</li>
+                <li class="px-2">Grow</li>
+                <li class="px-2">Market</li>
+                <li class="px-2">Business</li>
+                <li class="px-2">Support</li>
+              </ul>
+            </div>
+            <div class="grid gap-2 grid-cols-2">
+              <button class="px-5 py-2 rounded-xl border-2 font-bold">Sign in</button>
+              <button class="px-5 py-2 button__gradient font-bold rounded-xl">Sign up</button>
+            </div>
+          </div>
 
-      <!-- HERO SECTION ============================ -->
-      <div class="flex justify-center flex-col items-center h-screen-calc">
-        <h2 class="text-7xl hero-title">
-          <span class="block mb-3">We make crypto</span>
-          <span class="block mb-3">clear and simple</span>
-        </h2>
-        <p class="mt-3 max-w-xl text-center">Buy, sell, and grow your crypto with CoinFlip, the platform dedicated to every trader at every level.</p>
-        <button class="mt-5 px-5 py-3 bg-purple-700 rounded-xl font-semibold">Get Started</button>
-      </div>
+          <!-- HERO SECTION ============================ -->
+          <div class="flex justify-center flex-col items-center h-screen-calc">
+            <h2 class="text-7xl hero-title">
+              <span class="block mb-3">We make crypto</span>
+              <span class="block mb-3">clear and simple</span>
+            </h2>
+            <p class="mt-3 max-w-xl text-center text-gray-400">Buy, sell, and grow your crypto with CoinFlip, the platform dedicated to every trader at every level.</p>
+            <button class="mt-5 px-5 py-3 button__gradient rounded-xl font-semibold">Get Started</button>
+          </div>
 
-      <Card />
+        </div>
+        <Card />
+      </div>
 
       <!-- CLICK CATCH ============================= -->
-      <div class="">
+      <div class="relative">
         <!-- FIRST SECTION ========================= -->
-        <div class="text-center mx-auto max-w-3xl mb-48 mt-44 ">
-          <h3 class="font-extrabold text-5xl py-3">
+        <div class="text-center mx-auto max-w-3xl mb-48 mt-44 z-10">
+          <h3 class="font-extrabold text-5xl py-2 leading-custom">
             A crypto investment platform that invests in you 
           </h3>
-          <p class="mt-5 max-w-xl mx-auto py-3">
+          <p class="max-w-xl mx-auto py-3 text-gray-400">
             We invest more resources than any other platrom in making sure great support from real people is a click away, whenever you need it.
           </p>
-          <button class="mt-5 bg-slate-500 py-3 px-5 rounded-xl">
+          <button class="mt-5 button__gradient py-3 px-5 rounded-xl">
             Get Started
           </button>
+          
         </div>
 
+        <img class="absolute right-[0] top-[-150px] z-[0]" src="./assets/images/Looper-3.svg" alt="">
         <!-- SECOND SECTION ========================= -->
         <div class="flex items-center justify-center">
           <div class="flex-1 grid place-content-center">
             <img class="w-52 text-center" src="./assets/images/icons.svg" alt="">
           </div>
           <div class="flex-1 text-left px-10 py-6">
-            <h3 class="text-5xl font-extrabold p-2">
+            <h3 class="text-5xl font-extrabold p-2 leading-custom">
               24/7 access to full service customer support
             </h3>
-            <p class="mt-3 p-2 text-sm">
+            <p class="mt-3 mb-4 p-2 text-md text-gray-400">
               We invest more resources than any other platform in making sure great support from real people is a click away, whenever you need it.
             </p>
-            <button class="m-2 rounded-md p-2 border-2 border-white">Get Started</button>
+            <button class="m-2 rounded-md px-4 py-2 border-2 border-white">Get Started</button>
           </div>
         </div>
 
@@ -78,27 +84,36 @@
             <h3 class="text-5xl font-extrabold max-w-3xl leading-custom mx-auto p-2">
               Buy and sell with the lowest fees in the industry
             </h3>
-            <p class="mt-3 p-2 mx-auto text-sm max-w-lg">
+            <p class="mt-3 p-2 mx-auto text-sm max-w-lg text-gray-400">
               Buy and sell 150+ cryptocurrencies with 20+ fiat currencies using bank transfers or your credit/debit card.
             </p>
-            <button class="m-2 rounded-md p-2 border-2 border-white">Get Started</button>
+            <button class="my-3 text-purple-500">
+              <div class="flex">
+                <span class="block font-bold">Trade Now</span>
+                <div class="w-3 h-3">
+                  <svg class="fill-purple-500">
+                    <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                  </svg>
+                </div>
+              </div>
+            </button>
           </div>
       </div>
 
       <Table />
 
-      <div class="flex items-center justify-center flex-row-reverse h-screen mt-24">
+      <div class="flex items-center justify-center flex-row-reverse h-screen mt-24 px-20 py-8">
         <div class="flex-1 grid place-content-center">
           <img class="w-52 text-center" src="./assets/images/icons-2.svg" alt="">
         </div>
         <div class="flex-1 text-left px-12 py-6">
-          <h3 class="text-5xl font-extrabold max-w-lg p-2">
+          <h3 class="text-5xl leading-custom font-extrabold max-w-lg p-2">
             Take your first step into safe, secure crypto investing
           </h3>
-          <p class="mt-3 p-2 text-sm">
+          <p class="mt-3 mb-4 p-2 text-md text-gray-400 leading-">
             Separated they live in Bookmarks right at the coast of the famous Semantics, large language ocean Separated they live in Bookmarks right at the coast.
           </p>
-          <button class="m-2 rounded-md p-2 border-2 border-white">Get Started</button>
+          <button class="m-2 rounded-md px-4 py-2 button__gradient font-bold">Get Started</button>
         </div>
       </div>
 

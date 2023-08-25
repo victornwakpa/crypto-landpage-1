@@ -27,6 +27,16 @@ body {
   background-color: #1A1B23;
 }
 
+.bg-hero {
+  background-image: url("./images/Group-2.svg");
+  background-repeat: none;
+  background-size: cover;
+}
+/* .bg-card {
+  background-image: url("./images/Group-1.svg");
+  background-position: center;
+} */
+
 .border-custom {
   border: 2px solid #fff;
   border-radius: 4rem;
@@ -52,4 +62,17 @@ tr th:first-child {
 }
 tr td:nth-child(3) {
   text-align: right;
+}
+
+.button__gradient {
+  background: linear-gradient(225deg, #18C8FF 0%, #933FFE 100%);
+}
+.circle__gradient {
+  border-radius: 603px;
+  background: linear-gradient(180deg, rgba(0, 194, 255, 0.00) 0%, #FF29C3 100%);
+  filter: blur(100px);
+}
+.rectangle__gradient {
+  background: linear-gradient(180deg, rgba(24, 75, 255, 0.00) 0%, #174AFF 100%);
+  filter: blur(100px);
 }
